@@ -6,8 +6,8 @@ before:
     - wire gen ./...
 builds:
   - 
-    flags:
-      - -tags=prod
+    tags:
+      - prod
     env:
       - CGO_ENABLED=0
     goos:
