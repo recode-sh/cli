@@ -31,7 +31,7 @@ recode aws start recode-sh/workspace --instance-type t2.medium
     - [Tip: Docker & Docker compose](#-tip-docker--docker-compose)
     - [User configuration](#user-configuration)
     - [Project configuration](#project-configuration)
-        - [What if I don't have an user configuration?](#-what-if-i-dont-have-created-an-user-configuration)
+        - [What if I don't have an user configuration?](#-what-if-i-dont-have-an-user-configuration)
     - [Recode configuration](#recode-configuration)
         - [Base image (recode-sh/base-dev-env)](#base-image-recode-shbase-dev-env)
         - [Visual Studio Code extensions](#visual-studio-code-extensions)
