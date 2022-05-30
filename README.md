@@ -46,7 +46,7 @@ recode aws start recode-sh/workspace --instance-type t2.medium
 
 ## Requirements
 
-The Recode binary has been tested on Linux and Mac. Support for Windows is theoretical ([testers needed](https://code.visualstudio.com/) 💙).
+The Recode binary has been tested on Linux and Mac. Support for Windows is theoretical ([testers needed](https://github.com/recode-sh/cli/issues/4) 💙).
 
 Before using Recode, the following dependencies need to be installed:
 
