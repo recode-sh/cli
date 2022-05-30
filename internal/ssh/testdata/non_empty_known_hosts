@@ -1,0 +1,8 @@
+github.com,140.82.118.3 ssh-rsa fingerprint
+34.229.126.51 ssh-rsa fingerprint
+
+github.com ecdsa-sha2-nistp256 fingerprint
+github.com ssh-ed25519 fingerprint
+
+34.229.126.51 ecdsa-sha2-nistp256 fingerprint
+34.229.126.51 ssh-ed25519 fingerprint

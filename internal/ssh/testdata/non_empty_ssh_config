@@ -1,0 +1,12 @@
+Host *
+  AddKeysToAgent yes
+  UseKeychain yes
+  IdentityFile ~/.ssh/id_rsa
+  IdentitiesOnly yes
+  ServerAliveInterval 240
+
+Host 34.128.204.12
+  HostName hostname
+  IdentityFile identityFile
+  User user
+  ForwardAgent yes
