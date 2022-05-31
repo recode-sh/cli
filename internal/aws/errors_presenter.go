@@ -41,11 +41,13 @@ func (v AWSViewableErrorBuilder) Build(err error) (viewableError *presenters.Vie
 		viewableError.Title = "No AWS account found"
 		viewableError.Message = fmt.Sprintf(`An AWS account can be configured:
 
-	- by setting the \"%s\" and \"%s\" environment variables.
+  - by setting the "%s", "%s" and "%s" environment variables.
 		
-	- by installing the AWS CLI and running \"aws configure\".`,
+  - by installing the AWS CLI and running "aws configure".`,
 			userconfig.AWSAccessKeyIDEnvVar,
-			userconfig.AWSSecretAccessKeyEnvVar)
+			userconfig.AWSSecretAccessKeyEnvVar,
+			userconfig.AWSRegionEnvVar,
+		)
 
 		return
 	}
@@ -73,7 +75,7 @@ func (v AWSViewableErrorBuilder) Build(err error) (viewableError *presenters.Vie
 	if errors.Is(err, userconfig.ErrMissingRegionInEnv) {
 		viewableError.Title = "Missing region"
 		viewableError.Message = fmt.Sprintf(
-			"A region needs to be specified by setting the environment variable \"%s\" or by using the flag \"--region\".",
+			"A region needs to be specified by setting the \"%s\" environment variable or by using the \"--region\" flag.",
 			userconfig.AWSRegionEnvVar,
 		)
 
@@ -82,7 +84,7 @@ func (v AWSViewableErrorBuilder) Build(err error) (viewableError *presenters.Vie
 
 	if errors.Is(err, userconfig.ErrMissingRegionInFiles) {
 		viewableError.Title = "Missing region"
-		viewableError.Message = "A region needs to be specified by using the flag \"--region\"."
+		viewableError.Message = "A region needs to be specified by using the \"--region\" flag."
 
 		return
 	}
@@ -144,7 +146,7 @@ func (v AWSViewableErrorBuilder) Build(err error) (viewableError *presenters.Vie
 		viewableError.Title = "Unsupported instance type"
 		viewableError.Message = fmt.Sprintf(
 			"The instance type \"%s\" is not supported by Recode.\n\n"+
-				"Only on-demand instances with EBS and architectures \"%s\" are supported.",
+				"Only on-demand linux instances with EBS and \"%s\" architectures are supported.",
 			typedError.InstanceType,
 			typedError.SupportedArchs,
 		)
