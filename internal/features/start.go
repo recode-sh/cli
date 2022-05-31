@@ -259,6 +259,10 @@ func (s StartOutputHandler) HandleOutput(output features.StartOutput) error {
 						uncompletedLogLineBuf = bytes.Buffer{}
 					}
 
+					if err != nil && hasUncompletedLogLine {
+						s.logger.Log("")
+					}
+
 					if err == io.EOF {
 						break
 					}
