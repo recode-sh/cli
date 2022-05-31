@@ -36,7 +36,7 @@ var awsStartForceDevEnvRebuild bool
 
 // awsStartCmd represents the aws start command
 var awsStartCmd = &cobra.Command{
-	Use: "start (<repository_name>|<account_name/repository_name>)",
+	Use: "start <repository>",
 
 	Short: "Start a development environment",
 

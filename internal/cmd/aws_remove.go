@@ -34,13 +34,13 @@ var awsRemoveForceDevEnvRemove bool
 
 // awsRemoveCmd represents the aws remove command
 var awsRemoveCmd = &cobra.Command{
-	Use: "remove (<repository_name>|<account_name/repository_name>)",
+	Use: "remove <repository>",
 
 	Short: "Remove a development environment",
 
 	Long: `Remove an existing development environment.
 
-The development environment will be PERMANENTLY removed along with all its data.
+The development environment will be PERMANENTLY removed along with ALL your data.
 	
 There is no going back, so please be sure to save your work before running this command.`,
 

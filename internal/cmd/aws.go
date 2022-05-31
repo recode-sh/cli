@@ -50,7 +50,9 @@ Once started, you could stop it at any time, to save costs, using the command:
 
 If you don't plan to use this development environment again, you could remove it using the command:
 	
-  recode aws remove <repository>`,
+  recode aws remove <repository>
+
+<repository> may be relative to your personal GitHub account (eg: cli) or fully qualified (eg: my-organization/api).	`,
 
 	Example: `  recode aws start recode-sh/api --instance-type m4.large 
   recode aws stop recode-sh/api

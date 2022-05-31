@@ -31,7 +31,7 @@ import (
 
 // awsStopCmd represents the aws stop command
 var awsStopCmd = &cobra.Command{
-	Use: "stop (<repository_name>|<account_name/repository_name>)",
+	Use: "stop <repository>",
 
 	Short: "Stop a development environment",
 
