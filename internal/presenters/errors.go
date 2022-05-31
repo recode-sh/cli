@@ -85,9 +85,11 @@ func (RecodeViewableErrorBuilder) Build(err error) (viewableError *ViewableError
 	}
 
 	if typedError, ok := err.(entities.ErrInvalidDevEnvUserConfig); ok {
-		viewableError.Title = "Invalid repository configuration"
+		viewableError.Title = "Invalid user configuration"
+
+		bold := constants.Bold
 		viewableError.Message = fmt.Sprintf(
-			"The repository \"%s/%s\" contains an invalid configuration.\n\nReason: %s",
+			"The repository \"%s/%s\" contains an invalid configuration.\n\n"+bold("Reason:")+" %s",
 			typedError.RepoOwner,
 			entities.DevEnvUserConfigRepoName,
 			typedError.Reason,
