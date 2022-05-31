@@ -53,19 +53,13 @@ func (d DevEnvUserConfigResolver) Resolve() (
 	}
 
 	if !userHasDevEnvUserConfigRepo {
-		bold := constants.Bold
-		yellow := constants.Yellow
+		yellow := constants.Blue
 
 		d.logger.Log(
-			"\n%s "+bold("No repository \"%s\" found in GitHub account \"%s\"."),
-			bold(yellow("Warning!")),
+			"\n%s No repository \"%s\" found in GitHub account \"%s\". The repository \"%s\" will be used instead.",
+			yellow("[Info]"),
 			entities.DevEnvUserConfigRepoName,
 			devEnvUserConfigRepoOwner,
-		)
-
-		d.logger.Log(
-			"\n%s "+bold("Fallback to \"%s\" for user base configuration."),
-			bold(yellow("Warning!")),
 			entities.DevEnvUserConfigDefaultRepoOwner+"/"+entities.DevEnvUserConfigRepoName,
 		)
 
