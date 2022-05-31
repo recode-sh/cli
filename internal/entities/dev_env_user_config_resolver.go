@@ -53,11 +53,11 @@ func (d DevEnvUserConfigResolver) Resolve() (
 	}
 
 	if !userHasDevEnvUserConfigRepo {
-		yellow := constants.Blue
+		blue := constants.Blue
 
 		d.logger.Log(
 			"\n%s No repository \"%s\" found in GitHub account \"%s\". The repository \"%s\" will be used instead.",
-			yellow("[Info]"),
+			blue("[Info]"),
 			entities.DevEnvUserConfigRepoName,
 			devEnvUserConfigRepoOwner,
 			entities.DevEnvUserConfigDefaultRepoOwner+"/"+entities.DevEnvUserConfigRepoName,
