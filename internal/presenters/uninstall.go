@@ -49,11 +49,11 @@ func (u UninstallPresenter) PresentToView(response features.UninstallResponse) {
 		viewDataMessage := response.Content.SuccessMessage
 		viewDataSubtext := fmt.Sprintf(
 			"If you want to remove Recode entirely:\n\n"+
-				"  - Remove the binary located at path %s\n\n"+
-				"  - Remove the contiguration located at path %s\n\n"+
-				"  - Unauthorize the application on GitHub by going to %s",
-			bold("\""+response.Content.RecodeExecutablePath+"\""),
-			bold("\""+response.Content.RecodeConfigDirPath+"\""),
+				"  - Remove the Recode CLI (located at %s)\n\n"+
+				"  - Remove the Recode configuration (located at %s)\n\n"+
+				"  - Unauthorize the Recode application on GitHub by going to: %s",
+			bold(response.Content.RecodeExecutablePath),
+			bold(response.Content.RecodeConfigDirPath),
 			bold("https://github.com/settings/applications"),
 		)
 
