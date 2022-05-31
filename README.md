@@ -56,13 +56,17 @@ Before using Recode, the following dependencies need to be installed:
 
 ## Installation
 
-The easiest way to get started is by running the following command in your terminal:
+The easiest way to install Recode is by running the following command in your terminal:
 
 ```bash
-curl -sf https://raw.githubusercontent.com/recode-sh/cli/main/install.sh | sh -s -- -b /usr/local/bin
+curl -sf https://raw.githubusercontent.com/recode-sh/cli/main/install.sh | sh -s -- -b /usr/local/bin latest
 ```
 
-You could change the default installation directory by replacing `/usr/local/bin` with your prefered path.
+You could change:
+
+  - The default installation directory by replacing `/usr/local/bin` with your prefered path.
+  
+  - The version installed by replacing `latest` with a [specific version](https://github.com/recode-sh/cli/releases).
 
 Confirm that Recode is installed by running the `recode` command:
 
