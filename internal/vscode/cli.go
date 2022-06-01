@@ -1,11 +1,14 @@
 package vscode
 
 import (
+	"bytes"
 	"fmt"
 	"os"
 	"os/exec"
 	"path/filepath"
+	"regexp"
 	"runtime"
+	"strings"
 
 	"github.com/recode-sh/cli/internal/system"
 )
@@ -27,9 +30,29 @@ func (c CLI) Exec(arg ...string) (string, error) {
 		return "", err
 	}
 
-	cmdOutput, err := exec.Command(CLIPath, arg...).CombinedOutput()
+	cmd := exec.Command(CLIPath, arg...)
 
-	return string(cmdOutput), err
+	var stdout bytes.Buffer
+	var stderr bytes.Buffer
+
+	cmd.Stdout = &stdout
+	cmd.Stderr = &stderr
+
+	err = cmd.Run()
+
+	if err != nil {
+		newLineRegExp := regexp.MustCompile(`\n+`)
+
+		return "", fmt.Errorf(
+			"Error while calling the Visual Studio Code CLI:\n\n%s\n\n%s",
+			strings.TrimSpace(
+				newLineRegExp.ReplaceAllLiteralString(stderr.String(), " "),
+			),
+			err.Error(),
+		)
+	}
+
+	return stdout.String(), nil
 }
 
 func (c CLI) LookupPath(operatingSystem string) (string, error) {

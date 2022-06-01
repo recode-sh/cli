@@ -8,5 +8,10 @@ func NewExtensions() Extensions {
 
 func (e Extensions) Install(extensionName string) (string, error) {
 	c := CLI{}
-	return c.Exec("--install-extension", extensionName, "--force")
+
+	return c.Exec(
+		"--install-extension",
+		extensionName,
+		"--force",
+	)
 }

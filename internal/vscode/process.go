@@ -8,6 +8,7 @@ func NewProcess() Process {
 
 func (p Process) OpenOnRemote(hostKey, pathToOpen string) (string, error) {
 	c := CLI{}
+
 	return c.Exec(
 		"--new-window",
 		"--skip-release-notes",
