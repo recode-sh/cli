@@ -165,7 +165,7 @@ func (l LoginFeature) Execute(input LoginInput) error {
 
 	if err := l.browser.OpenURL(gitHubOAuthAuthorizeURL); err != nil {
 		l.logger.Error(
-			"\nCannot open browser! Please visit above URL.",
+			"\nCannot open browser! Please visit above URL ↑",
 		)
 	}
 
