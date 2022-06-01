@@ -210,7 +210,7 @@ func (RecodeViewableErrorBuilder) Build(err error) (viewableError *ViewableError
 	viewableError.Title = "Unknown error"
 	viewableError.Message = fmt.Sprintf(
 		"An unknown error occurred.\n\n"+
-			"You could try to fix it (using the details below) and rerun the command or open a new issue at: https://github.com/recode-sh/cli/issues/new\n\n"+
+			"You could try to fix it (using the details below) or open a new issue at: https://github.com/recode-sh/cli/issues/new\n\n"+
 			bold("%s"),
 		err.Error(),
 	)
