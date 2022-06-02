@@ -4,7 +4,7 @@
 
 <p align="center">
     <h1 align="center">Recode</h1>
-    <p align="center">Remote development environments defined as code. Running on your cloud provider account.<br/> Currently available on <a href="https://github.com/recode-sh/aws-cloud-provider">Amazon Web Services</a> and Visual Studio Code.</p>
+    <p align="center">Remote development environments defined as code. Running in your cloud provider account.<br/> Currently available on <a href="https://github.com/recode-sh/aws-cloud-provider">Amazon Web Services</a> and Visual Studio Code.</p>
 </p>
 
 ```bash
