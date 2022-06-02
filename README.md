@@ -99,7 +99,8 @@ Available Commands:
   login       Connect a GitHub account to use with Recode
 
 Flags:
-  -h, --help   help for recode
+  -h, --help    help for recode
+  -v, --version version for recode
 
 Use "recode [command] --help" for more information about a command.
 ```
