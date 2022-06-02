@@ -9,7 +9,7 @@ import (
 )
 
 func TestPathExistsWithExistingPath(t *testing.T) {
-	existingPath := "./testdata"
+	existingPath := "./paths_test.go"
 	pathExists := system.PathExists(existingPath)
 
 	if !pathExists {
