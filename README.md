@@ -117,7 +117,7 @@ Recode requires the following permissions:
 
 **All your data (including the OAuth access token) are only stored locally in `~/.config/recode/recode.yml` (or in `XDG_CONFIG_HOME` if set).**
 
-The source code that implement the GitHub OAuth flow is located in the [recode-sh/api](https://github.com/recode-sh/api) repository.
+The source code that implements the GitHub OAuth flow is located in the [recode-sh/api](https://github.com/recode-sh/api) repository.
 
 ### Start
 
