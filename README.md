@@ -41,6 +41,8 @@ https://user-images.githubusercontent.com/1233275/171855094-1768237a-ce22-41fc-8
 - [Frequently asked questions](#frequently-asked-questions)
     - [How does it compare with GitPod/Coder/Codespaces/X?](#how-does-it-compare-with-gitpodcodercodespacesx)
     - [How does it compare with VSCode remote SSH / Container extensions?](#how-does-it-compare-with-vscode-remote-ssh--container-extensions)
+    - [Why using Docker to configure and not something like Nix, for example?](#why-using-docker-to-configure-and-not-something-like-nix-for-example)
+    - [Given that my dev env will run in a container does it mean that it will be limited?](#given-that-my-dev-env-will-run-in-a-container-does-it-mean-that-it-will-be-limited)
 - [The future](#the-future)
 - [License](#license)
 
@@ -551,6 +553,20 @@ go mod download
 - Support the pre-installation of VSCode extensions.
 - Doesn't require Docker to be installed locally.
 - Doesn't tied to a specific code editor.
+
+#### Why using Docker to configure and not something like Nix, for example?
+
+I know. Containers are not meant to be used as a VM like that. 
+
+But, at the time of writing, Docker is still the most widely used tool among developers to configure their environment (even if it may certainly change in the future).
+
+#### Given that my dev env will run in a container does it mean that it will be limited?
+
+Mostly not. 
+
+Given the scope of this project (a private instance running in your own cloud provider account), Docker is mostly used for configuration purpose and not to "isolate" the VM from your environment.
+
+As a result, your development environment container will run in **privileged mode** in the **host network**.
 
 ## The future
 
