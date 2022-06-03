@@ -15,9 +15,7 @@ recode aws start recode-sh/workspace --instance-type t2.medium
   ... see the <a href="https://github.com/recode-sh/workspace">recode-sh/workspace</a> repository for an example of development environment configuration
 </blockquote>
 
-
-https://user-images.githubusercontent.com/1233275/171618947-147053d2-0613-43ab-9b88-3cc0b8d99ace.mp4
-
+https://user-images.githubusercontent.com/1233275/171833190-56f48129-3a70-4d31-90d9-6083aa58add4.mp4
 
 ## Table of contents
 - [Requirements](#requirements)
