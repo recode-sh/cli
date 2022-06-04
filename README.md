@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/recode.png" alt="recode" width="180" height="180" />
+  <img src="https://user-images.githubusercontent.com/1233275/172015327-7234ec48-fe57-4a7b-b48e-baf5e6d67aab.png" alt="recode" width="180" height="180" />
 </p>
 
 <p align="center">
@@ -16,6 +16,8 @@ recode aws start recode-sh/workspace --instance-type t2.medium
 ```
 
 https://user-images.githubusercontent.com/1233275/171855094-1768237a-ce22-41fc-812b-048870e69762.mp4
+
+<img width="1136" alt="vscode" src="https://user-images.githubusercontent.com/1233275/172015213-0ba516b6-fe24-4bd4-8ad4-d876c6188f3c.png">
 
 <blockquote align="left">
   ... see the <a href="https://github.com/recode-sh/workspace">recode-sh/workspace</a> repository for an example of development environment configuration
