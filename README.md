@@ -7,7 +7,7 @@
     <p align="center">Remote development environments defined as code. Running in your cloud provider account.<br/> Currently available on <a href="https://github.com/recode-sh/aws-cloud-provider">Amazon Web Services</a> and Visual Studio Code.</p>
 </p>
 
-<blockquote align="right">
+<blockquote align="left">
   ... you can think of it as a desktop version of Gitpod / Coder / GitHub Codespaces but less polished and with less features
 </blockquote>
 
@@ -17,7 +17,7 @@ recode aws start recode-sh/workspace --instance-type t2.medium
 
 https://user-images.githubusercontent.com/1233275/171855094-1768237a-ce22-41fc-812b-048870e69762.mp4
 
-<blockquote align="right">
+<blockquote align="left">
   ... see the <a href="https://github.com/recode-sh/workspace">recode-sh/workspace</a> repository for an example of development environment configuration
 </blockquote>
 
