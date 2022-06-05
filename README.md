@@ -46,7 +46,7 @@ https://user-images.githubusercontent.com/1233275/171855094-1768237a-ce22-41fc-8
         - [Hooks](#hooks)
 - [Frequently asked questions](#frequently-asked-questions)
     - [How does it compare with GitPod/Coder/Codespaces/X?](#-how-does-it-compare-with-gitpodcodercodespacesx)
-    - [How does it compare with VSCode remote SSH / Container extensions?](#-how-does-it-compare-with-vscode-remote-ssh--container-extensions)
+    - [How does it compare with VSCode remote SSH / Container extensions?](#-how-does-it-compare-with-vagrant--vscode-remote-ssh--container-extensions)
     - [Why using Docker as a VM and not something like NixOS, for example?](#-why-using-docker-as-a-vm-and-not-something-like-nixos-for-example)
     - [Given that my dev env will run in a container does it mean that it will be limited?](#-given-that-my-dev-env-will-run-in-a-container-does-it-mean-that-it-will-be-limited)
 - [The future](#the-future)
@@ -559,13 +559,13 @@ go mod download
 
 ... and 0% VC-backed. 0% Locked-in. 0% Proprietary config files.
 
-#### > How does it compare with VSCode remote SSH / Container extensions?
+#### > How does it compare with Vagrant / VSCode remote SSH / Container extensions?
 
 - Remote development environments defined as code (with support for user and project configuration).
 - Automatic infrastructure / VM provisionning for multiple cloud providers.
 - Fully integrated with GitHub (private and multiple repositories, verified commits...).
 - Support the pre-installation of VSCode extensions.
-- Doesn't require Docker to be installed locally.
+- Doesn't require a VM or Docker to be installed locally.
 - Doesn't tied to a specific code editor.
 
 #### > Why using Docker as a VM and not something like NixOS, for example?
