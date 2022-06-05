@@ -570,7 +570,7 @@ go mod download
 
 #### > Why using Docker as a VM and not something like NixOS, for example?
 
-I'm aware that containers are not meant to be used as a VM like that (forgive me 🙏) but, at the time of writing, Docker is still the most widely used tool among developers to configure their environment (even if it may certainly change in the future).
+I'm aware that containers are not meant to be used as a VM like that (forgive me for that 🙏) but, at the time of writing, Docker is still the most widely used tool among developers to configure their environment (even if it may certainly change in the future).
 
 #### > Given that my dev env will run in a container does it mean that it will be limited?
 
