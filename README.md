@@ -45,7 +45,7 @@ https://user-images.githubusercontent.com/1233275/171855094-1768237a-ce22-41fc-8
         - [Build arguments (RECODE_INSTANCE_OS and RECODE_INSTANCE_ARCH)](#build-arguments-recode_instance_os-and-recode_instance_arch)
         - [Hooks](#hooks)
 - [Frequently asked questions](#frequently-asked-questions)
-    - [How does it compare with GitPod/Coder/Codespaces/X?](#-how-does-it-compare-with-gitpodcodercodespacesx)
+    - [How does it compare with GitPod / Coder / Codespaces / X?](#-how-does-it-compare-with-gitpod--coder--codespaces--x)
     - [How does it compare with Vagrant / VSCode remote SSH / Container extensions?](#-how-does-it-compare-with-vagrant--vscode-remote-ssh--container-extensions)
     - [Why using Docker as a VM and not something like NixOS, for example?](#-why-using-docker-as-a-vm-and-not-something-like-nixos-for-example)
     - [Given that my dev env will run in a container does it mean that it will be limited?](#-given-that-my-dev-env-will-run-in-a-container-does-it-mean-that-it-will-be-limited)
@@ -546,7 +546,7 @@ go mod download
 
 ## Frequently asked questions
 
-#### > How does it compare with GitPod/Coder/Codespaces/X?
+#### > How does it compare with GitPod / Coder / Codespaces / X?
 
 - 100% Free.
 - 100% Open-source.
