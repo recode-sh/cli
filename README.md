@@ -15,7 +15,7 @@
 recode aws start recode-sh/workspace --instance-type t2.medium
 ```
 
-https://user-images.githubusercontent.com/1233275/172197634-64d62f24-a62b-49d5-973b-b447b1045be2.mp4
+https://user-images.githubusercontent.com/1233275/172343503-89f9ed06-9ca9-4467-b39e-0566f326a2ab.mp4
 
 <img width="1136" alt="vscode" src="https://user-images.githubusercontent.com/1233275/172015213-0ba516b6-fe24-4bd4-8ad4-d876c6188f3c.png">
 
