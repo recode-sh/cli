@@ -70,7 +70,7 @@ The easiest way to install Recode is by running the following command in your te
 curl -sf https://raw.githubusercontent.com/recode-sh/cli/main/install.sh | sh -s -- -b /usr/local/bin latest
 ```
 
-This command could be run as-is or you may want to change:
+This command could be run as-is or by changing:
 
   - The default installation directory by replacing `/usr/local/bin` with your **prefered path**.
   
