@@ -72,7 +72,7 @@ curl -sf https://raw.githubusercontent.com/recode-sh/cli/main/install.sh | sh -s
 
 This command could be run as-is or by changing:
 
-  - The default installation directory by replacing `/usr/local/bin` with your **prefered path**.
+  - The default installation directory by replacing `/usr/local/bin` with your **preferred path**.
   
   - The version installed by replacing `latest` with a **[specific version](https://github.com/recode-sh/cli/releases)**.
 
@@ -200,7 +200,7 @@ recode aws uninstall
 
 If you think about all the projects you've worked on, you may notice that you've:
 
-  - a set of configuration / tools used for all your projects (eg: a prefered timezone / locale, a specific shell...);
+  - a set of configuration / tools used for all your projects (eg: a preferred timezone / locale, a specific shell...);
   
   - a set of configuration / tools specific for each project (eg: docker compose, go >= 1.18 or node.js >= 14).
 
