@@ -72,7 +72,7 @@ curl -sf https://raw.githubusercontent.com/recode-sh/cli/main/install.sh | sh -s
 
 This command could be run as-is or by changing:
 
-  - The default installation directory by replacing `/usr/local/bin` with your **preferred path**.
+  - The installation directory by replacing `/usr/local/bin` with your **preferred path**.
   
   - The version installed by replacing `latest` with a **[specific version](https://github.com/recode-sh/cli/releases)**.
 
