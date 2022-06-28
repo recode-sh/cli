@@ -19,7 +19,7 @@ func NewAWSViewableErrorBuilder() AWSViewableErrorBuilder {
 	return AWSViewableErrorBuilder{}
 }
 
-func (v AWSViewableErrorBuilder) Build(err error) (viewableError *presenters.ViewableError) {
+func (a AWSViewableErrorBuilder) Build(err error) (viewableError *presenters.ViewableError) {
 	viewableError = &presenters.ViewableError{}
 
 	if errors.Is(err, entities.ErrRecodeNotInstalled) {
@@ -154,6 +154,6 @@ func (v AWSViewableErrorBuilder) Build(err error) (viewableError *presenters.Vie
 		return
 	}
 
-	viewableError = v.RecodeViewableErrorBuilder.Build(err)
+	viewableError = a.RecodeViewableErrorBuilder.Build(err)
 	return
 }
