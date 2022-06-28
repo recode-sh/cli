@@ -8,7 +8,7 @@
 </p>
 
 <blockquote align="left">
-  ... you can think of it as a desktop version of Gitpod / Coder / GitHub Codespaces less polished and with less features but 100% free, open-source and community-driven
+  ... you can think of it as a desktop version of Gitpod / Coder / GitHub Codespaces less polished and with less features but 100% free, 100% open-source and 100% community-driven
 </blockquote>
 
 ```bash
