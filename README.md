@@ -1,4 +1,4 @@
-*If you need ports management, long-running processes and automatic HTTPS, check out [Eleven](https://github.com/eleven-sh/cli) my other open-source project based on Recode. - Jeremy*
+*If you need ports management, long-running processes and automatic HTTPS, check out [Eleven](https://github.com/eleven-sh/cli) my other open-source project based on Recode.*
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/1233275/172015327-7234ec48-fe57-4a7b-b48e-baf5e6d67aab.png" alt="recode" width="180" height="180" />
